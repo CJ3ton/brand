@@ -1,0 +1,63 @@
+.heading {
+    min-height: 901px;
+    background: url('../img/heading-bg.jpg') center center / cover no-repeat;
+    padding-top: 264px;
+
+    &__shedule {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.06em;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+        color: #FFFFFF;
+    }
+
+    &__title {
+        margin-top: 24px;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 88px;
+        color: #FFFFFF;
+
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn {
+        margin-top: 40px;
+        width: 270px;
+        height: 100px;
+        border: none;
+        background: #3A4574;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFF;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 25px;
+
+        &-item {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            font-feature-settings: 'pnum'on, 'lnum'on;
+            color: #FFF;
+        }
+    }
+}
