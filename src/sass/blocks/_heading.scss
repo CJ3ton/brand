@@ -37,6 +37,14 @@
         font-size: 18px;
         line-height: 24px;
         color: #FFF;
+        transition: all .6s;
+
+        &:hover {
+            transition: all .6s;
+            background-color: transparent;
+            border: 4px solid #3A4574;
+            font-size: 20px;
+        }
     }
 
     &__social {

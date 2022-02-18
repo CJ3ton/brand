@@ -111,7 +111,83 @@
             </div>
     </section>
     <!-- WEEK -->
+    <!-- REVIEWS -->
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__slider swiper">
+                <div class="reviews__slides swiper-wrapper">
+                    <div class="reviews__slide swiper-slide">
+                        <div class="img">
+                            <img src="img/icons/quot.svg" alt="Quotes">
+                        </div>
+                        <div class="reviews__slide-title">Goede service, lekker eten, toffe ambiance</div>
+                        <div class="reviews__slide-text">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren.
+                        </div>
+                        <div class="reviews__slide-name">ALAIN HEYNDRICKX</div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                        <div class="img">
+                            <img src="img/icons/quot.svg" alt="Quotes">
+                        </div>
+                        <div class="reviews__slide-title">Gevarieerde menukaart, snelle bediening, mooi interieur</div>
+                        <div class="reviews__slide-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid corporis minus
+                            non, dolore obcaecati voluptatem ratione minima enim at, eaque provident commodi quasi
+                            magnam asperiores ut neque rerum nobis?
+                        </div>
+                        <div class="reviews__slide-name">ANNA KARENINA</div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                        <div class="img">
+                            <img src="img/icons/quot.svg" alt="Quotes">
+                        </div>
+                        <div class="reviews__slide-title">Zeer smakelijke koffie!</div>
+                        <div class="reviews__slide-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, incidunt sapiente itaque
+                            possimus officiis illum, magni cum magnam autem quas rerum voluptate perspiciatis deserunt
+                            molestiae vero eos libero sint atque.
+                        </div>
+                        <div class="reviews__slide-name">DANIEL NORTON</div>
+                    </div>
+                </div>
+
+                <div class="reviews__slider-prev">
+                    <svg width="70" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.896 11.9L24.879 30.917c-2.246 2.245-2.246 5.92 0 8.166L43.896 58.1" stroke="#fff"
+                            stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="reviews__slider-next">
+                    <svg width="70" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.104 11.9l19.017 19.017c2.246 2.245 2.246 5.92 0 8.166L26.104 58.1" stroke="#fff"
+                            stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- REVIEWS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__dialog-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+            </div>
+            <div class="modal__dialog">
+                <form class="modal__dialog-form" method="post" autocomplete="off">
+                    <input type="text" name="name" id="name" placeholder="Uw naam" required>
+                    <input type="tel" name="phone" id="phone" placeholder="Jouw telefoon" required>
+                    <input type="textarea" name="message" id="message" placeholder="Bericht">
+                    <button type="submit">Reserve</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

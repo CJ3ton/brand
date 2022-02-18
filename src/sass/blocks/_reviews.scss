@@ -1,0 +1,64 @@
+.reviews {
+    min-height: 782px;
+    padding: 220px 0;
+    background-color: #3A4574;
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        &-title {
+            margin-top: 34px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 40px;
+            text-align: center;
+            color: #D3B47F;
+        }
+
+        &-text {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 40px;
+            text-align: center;
+            color: #FFFFFF;
+            max-width: 785px;
+        }
+
+        &-name {
+            margin-top: 40px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: 0.245em;
+            color: #D3B47F;
+        }
+    }
+
+    &__slider {
+        &-prev {
+            position: absolute;
+            left: 0;
+        }
+
+        &-next {
+            position: absolute;
+            right: 0;
+        }
+
+        &-prev, &-next {
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 2;
+
+            &:hover svg path {
+                stroke: #D3B47F;
+                transition: all .3s;
+            }
+        }
+    }
+}
