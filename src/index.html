@@ -34,6 +34,9 @@
                 </svg>
                 <a href="tel:+3292825725">+32 9 282 57 25</a>
             </div>
+            <div class="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#fff" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+            </div>
         </div>
     </header>
     <!-- HEADER -->
@@ -64,7 +67,7 @@
                         <h3>Woensdag 12/01</h3>
                         <div class="week__list-item-text">
                             <div>Salade met Serrano</div>
-                            <span></span><span></span><span></span>
+                            <div class="week__list-dots"><span></span><span></span><span></span></div>
                             <div>Steak Tartaar</div>
                         </div>
                     </div>
@@ -72,7 +75,7 @@
                         <h3>Donderdag 13/01</h3>
                         <div class="week__list-item-text">
                             <div>Toast Roquefort</div>
-                            <span></span><span></span><span></span>
+                            <div class="week__list-dots"><span></span><span></span><span></span></div>
                             <div>Penne met Kip en Prei</div>
                         </div>
                     </div>
@@ -80,7 +83,7 @@
                         <h3>Vrijdag 14/01</h3>
                         <div class="week__list-item-text">
                             <div>Verrassing van de Chef</div>
-                            <span></span><span></span><span></span>
+                            <div class="week__list-dots"><span></span><span></span><span></span></div>
                             <div>Penne met Kip en Prei</div>
                         </div>
                     </div>
@@ -88,7 +91,7 @@
                         <h3>Vrijdag 15/01</h3>
                         <div class="week__list-item-text">
                             <div>Verrassing van de Chef</div>
-                            <span></span><span></span><span></span>
+                            <div class="week__list-dots"><span></span><span></span><span></span></div>
                             <div>Penne met Kip en Prei</div>
                         </div>
                     </div>
@@ -96,17 +99,16 @@
                         <h3>Vrijdag 16/01</h3>
                         <div class="week__list-item-text">
                             <div>Verrassing van de Chef</div>
-                            <span></span><span></span><span></span>
+                            <div class="week__list-dots"><span></span><span></span><span></span></div>
                             <div>Penne met Kip en Prei</div>
                         </div>
                     </div>
                 </div>
                 <div class="week__img">
                     <div class="week__img-square">
-                        <img class="week__img-left" src="img/week-img-left.jpg" alt="Image">
-                        <img class="week__img-right" src="img/week-img-right.jpg" alt="Image">
                     </div>
-
+                    <img class="week__img-left" src="img/week-img-left.jpg" alt="Image">
+                    <img class="week__img-right" src="img/week-img-right.jpg" alt="Image">
                 </div>
             </div>
     </section>
@@ -171,15 +173,17 @@
         </div>
     </section>
     <!-- REVIEWS -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- MODAL -->
     <div class="overlay">
         <div class="modal">
             <div class="modal__dialog-close">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path
+                        d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+                </svg>
             </div>
             <div class="modal__dialog">
-                <form class="modal__dialog-form" method="post" autocomplete="off">
+                <form action="#" class="modal__dialog-form">
                     <input type="text" name="name" id="name" placeholder="Uw naam" required>
                     <input type="tel" name="phone" id="phone" placeholder="Jouw telefoon" required>
                     <input type="textarea" name="message" id="message" placeholder="Bericht">
@@ -187,7 +191,38 @@
                 </form>
             </div>
         </div>
+        <div class="message"></div>
+        <div class="mobile">
+            <div class="mobile__close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path
+                        d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+                </svg>
+            </div>
+            <div class="mobile__menu">
+                <ul>
+                    <li><a href="#">À la carte</a></li>
+                    <li><a href="#">Wijnkaart</a></li>
+                    <li><a href="#">Lunchmenu</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile__phone">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M21.97 18.33c0 .36-.08.73-.25 1.09-.17.36-.39.7-.68 1.02-.49.54-1.03.93-1.64 1.18-.6.25-1.25.38-1.95.38-1.02 0-2.11-.24-3.26-.73s-2.3-1.15-3.44-1.98a28.75 28.75 0 01-3.28-2.8 28.414 28.414 0 01-2.79-3.27c-.82-1.14-1.48-2.28-1.96-3.41C2.24 8.67 2 7.58 2 6.54c0-.68.12-1.33.36-1.93.24-.61.62-1.17 1.15-1.67C4.15 2.31 4.85 2 5.59 2c.28 0 .56.06.81.18.26.12.49.3.67.56l2.32 3.27c.18.25.31.48.4.7.09.21.14.42.14.61 0 .24-.07.48-.21.71-.13.23-.32.47-.56.71l-.76.79c-.11.11-.16.24-.16.4 0 .08.01.15.03.23.03.08.06.14.08.2.18.33.49.76.93 1.28.45.52.93 1.05 1.45 1.58.54.53 1.06 1.02 1.59 1.47.52.44.95.74 1.29.92.05.02.11.05.18.08.08.03.16.04.25.04.17 0 .3-.06.41-.17l.76-.75c.25-.25.49-.44.72-.56.23-.14.46-.21.71-.21.19 0 .39.04.61.13.22.09.45.22.7.39l3.31 2.35c.26.18.44.39.55.64.1.25.16.5.16.78z"
+                        stroke="#D3B47F" stroke-width="1.5" stroke-miterlimit="10" />
+                    <path d="M18.5 9c0-.6-.47-1.52-1.17-2.27-.64-.69-1.49-1.23-2.33-1.23M22 9c0-3.87-3.13-7-7-7"
+                        stroke="#D3B47F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <a href="tel:+3292825725">+32 9 282 57 25</a>
+            </div>
+        </div>
     </div>
+    <!-- MODAL -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
