@@ -48,11 +48,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.reviews__slider', {
         loop: true,
         navigation: {
             nextEl: '.reviews__slider-next',
             prevEl: '.reviews__slider-prev',
+        },
+    });
+
+    const sliderFotos = new Swiper('.fotos__slider', {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        navigation: {
+            nextEl: '.fotos__arrows-next',
+            prevEl: '.fotos__arrows-prev',
         },
     });
 

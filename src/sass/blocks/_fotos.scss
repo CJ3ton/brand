@@ -1,0 +1,43 @@
+.fotos {
+    height: 605px;
+    background-color: #3A4574;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 68px;
+
+    }
+
+    &__descr {
+
+        &-title {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 88px;
+            color: #FFFFFF;
+
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__slider {
+        width: 2970px;
+        height: 646px;
+        &-slide {
+            overflow-y: hidden;
+
+            & img {
+                width: 100%;
+                
+            }
+        }
+        
+    }
+}

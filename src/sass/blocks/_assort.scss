@@ -1,0 +1,50 @@
+.assort {
+    padding: 109px 0 80px 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+        margin-bottom: 30px;
+
+        &:nth-child(2n + 1) {
+
+            & .assort__img {
+                order: 1;
+            }
+        }
+    }
+
+    &__text {
+        position: relative;
+
+        & h3 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 88px;
+            color: #000000;
+        }
+
+        & p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 32px;
+            color: #808080;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 108px;
+                height: 2px;
+                background-color: #D3B47F;
+                transform: translate(-50%, -16px);
+                
+            }
+        }
+
+        
+
+    }
+}
