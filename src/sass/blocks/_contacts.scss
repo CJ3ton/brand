@@ -1,0 +1,126 @@
+.contacts {
+    padding-top: 404px;
+
+    &__wrapper {
+        display: flex;
+        column-gap: 96px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 88px;
+        color: #000000;
+    }
+
+    &__info {
+
+        &-list {
+            margin-top: 35px;
+        }
+
+        &-item {
+            display: flex;
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-top: 56px;
+            }
+        }
+
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: #D3B47F;
+            margin-right: 16px;
+        }
+
+        &-type {
+            font-size: 16px;
+            line-height: 32px;
+            color: #2E2E2E;
+        }
+
+        &-text {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            font-feature-settings: 'pnum'on, 'lnum'on;
+            color: #2E2E2E;
+        }
+    }
+
+    &__form {
+        width: 670px;
+
+        &-input {
+            position: relative;
+        }
+
+        &-textarea {
+            position: relative;
+            grid-column: 1 / 3;
+            margin-top: 62px;
+
+            & textarea {
+                width: 100%;
+                max-width: 670px;
+                height: 100%;
+                padding: 28px 15px;
+                border: 1px solid #CCCCCC;
+                resize: none;
+            }
+        }
+
+        & form {
+            margin-top: 71px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 80px 187px 100px;
+            column-gap: 4px;
+
+            & label {
+                position: absolute;
+                left: 0;
+                top: -42px;
+                font-size: 16px;
+                line-height: 32px;
+                color: #000000;
+            }
+
+            & input {
+                height: 100%;
+                padding: 15px;
+                border: 1px solid #CCCCCC;
+                width: 320px;
+            }
+
+            & button {
+                width: 270px;
+                height: 100px;
+                background-color: #3A4574;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 20px;
+                border: none;
+
+                &:hover {
+                    transition: all .3s;
+                    background-color: #fff;
+                    border: 4px solid #3A4574;
+                    color: #3A4574;
+                }
+            }
+        }
+    }
+
+    &__map {
+        margin-top: 42px;
+    }
+}

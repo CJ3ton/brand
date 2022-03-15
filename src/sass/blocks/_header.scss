@@ -11,13 +11,14 @@
     }
 
     &__nav {
+        margin: 3px 0 0 -23px;
 
         & ul {
             list-style-type: none;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            column-gap: 45px;
+            column-gap: 46px;
             margin-bottom: 0;
 
             & li a {
@@ -34,10 +35,18 @@
     }
 
     &__phone {
+
+        & svg {
+            margin-right: 7px;
+        }
+
         & a {
+            display: inline-block;
             color: #fff;
             text-decoration: none;
             transition: all .3s;
+            line-height: 25px;
+            margin: 2px 1px 0 0;
 
             &:hover {
                 color: #D3B47F;

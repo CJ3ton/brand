@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         burger = document.querySelector('.burger'),
         mobile = document.querySelector('.mobile'),
         menuItems = mobile.querySelectorAll('li'),
-        mobileClose = mobile.querySelector('.mobile__close');
+        mobileClose = mobile.querySelector('.mobile__close'),
+        formRequest = document.querySelector('.form__request');
 
     close.addEventListener('click', () => {
         overlay.classList.remove('show');
@@ -58,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const sliderFotos = new Swiper('.fotos__slider', {
         loop: true,
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 30,
         centeredSlides: true,
         navigation: {
@@ -108,5 +109,27 @@ document.addEventListener('DOMContentLoaded', () => {
             clearTimeout(timerId);
         }
     }
+
+    formRequest.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        let response = await fetch('/mailer/smart.php', {
+            method: 'POST',
+            body: new FormData(formRequest)
+        });
+
+        let result = await response.json();
+
+        if (result.message === 'success') {
+            console.log('Success!');
+            formRequest.reset();
+            showMessage('Uw bestelling is geaccepteerd! Wij bellen u terug!');
+        } else {
+            console.log('Error!');
+            formRequest.reset();
+            showMessage('Er is iets fout gegaan!');
+        }
+
+    });
 
 });

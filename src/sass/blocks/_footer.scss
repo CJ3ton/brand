@@ -1,0 +1,16 @@
+.footer {
+    padding-top: 32px;
+    min-height: 300px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social {
+        margin-right: 4px;
+        &-item {
+            border: 1px solid #000;
+            color: #000;
+        }
+    }
+}

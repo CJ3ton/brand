@@ -6,7 +6,7 @@
         display: grid;
         grid-template-columns: 470px auto;
         grid-template-rows: 100%;
-        column-gap: 35px;
+        column-gap: 30px;
     }
 
     &__list {
@@ -45,7 +45,7 @@
                 align-items: center;
                 font-weight: normal;
                 font-size: 18px;
-                line-height: 32px;
+                line-height: 33px;
                 color: #000000;
                 column-gap: 12px;
 
@@ -71,17 +71,17 @@
         position: relative;
 
         &-square {
-            width: 470px;
-            height: 502px;
+            width: 475px;
+            height: 505px;
             border: 2px solid #D3B47F;
             position: relative;
             margin: 0 auto;
-            margin-top: 51px;
+            margin-top: 50px;
         }
 
         &-left {
             position: absolute;
-            bottom: -85px;
+            bottom: -83px;
             left: 0;
         }
 
