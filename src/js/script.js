@@ -66,6 +66,17 @@ document.addEventListener('DOMContentLoaded', () => {
             nextEl: '.fotos__arrows-next',
             prevEl: '.fotos__arrows-prev',
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            // when window width is >= 640px
+            768: {
+                slidesPerView: "auto",
+                spaceBetween: 30
+            }
+        }
     });
 
     form.addEventListener('submit', async (e) => {
